@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      background-color: #414141;
+      color :aqua;
+    }
+  </style>
+  <title>Images</title>
+</head>
+<body>
+  <h1>Image Example</h1>  
+  <img src="https://images.pexels.com/photos/29475545/pexels-photo-29475545.jpeg?cs=srgb&dl=pexels-zeynep-uluc-1434174218-29475545.jpg&fm=jpg"  alt="walk in the park" width="200px" height="200px">
+ <img src="https://images.pexels.com/photos/35122412/pexels-photo-35122412.jpeg" alt="no image available" width="200" height="200">
+
+  <picture>
+    <source media="(min-width: 650px)" srcset="./html-course.png">
+    <source media="(min-width: 460px)" srcset="./html-course.png">
+    <img src="./html-course.png" alt="">
+  </picture>
+
+  <!-- an images map example: -->
+  <img src="https://pexels-susan-flores-232226967-35122412.jpg" width="400px" height="400px" usemap="#image-map">
+
+<map name="#image-map">
+    <area oneclick="one()" target="" alt="" title="" href="" coords="1790,1911,2440,2522" shape="rect">
+    <area twoclick="two()" target="" alt="" title="" href="" coords="1535,2611,2708,3201" shape="rect">
+    <area threeclick="three()" target="" alt="" title="" href="" coords="1726,3398,2740,4578" shape="rect">
+    <area fourclick="four()" target="" alt="" title="" href="" coords="1595,4426,2564,5801" shape="rect">
+</map>
+
+<script>
+  function one(){
+    alert("you clicked on area one");
+  }
+  function two(){
+    alert("you clicked on area two");
+  }
+  function three(){
+    alert("you clicked on area three");
+  }
+  function four(){
+    alert("you clicked on area four");
+  }
+</script>
+</body>
+</html>
